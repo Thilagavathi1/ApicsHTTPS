@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">https://10.45.154.5</domain>
+                <domain includeSubdomains="true">   https://10.43.115.17</domain>
+                <domain includeSubdomains="true">  https://10.45.153.99</domain>
+
+        <trust-anchors>
+            <certificates src="@raw/intranetroot"/>
+            <certificates src="@raw/intranetintermiate"/>
+          
+
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
